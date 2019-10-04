@@ -4,7 +4,7 @@
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       <ion-title>
-        Ladies
+        Suppliers
       </ion-title>
     </ion-toolbar>
   </ion-header>
@@ -12,4 +12,7 @@
   <ion-content>
     <p>Supplier list page</p>
     <button (click)="buttonClicked()">Przycisk</button>
+    <ion-list>
+      <sl-component [arrayOfItems]="listOfSuppliers"></sl-component>
+    </ion-list>
   </ion-content>

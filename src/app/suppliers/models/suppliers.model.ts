@@ -4,6 +4,7 @@ export interface IPerson {
     height: number,
     tits: string | null,
     skills: Array<number>,
+    photo: string
 }
 
 export interface IRoom {

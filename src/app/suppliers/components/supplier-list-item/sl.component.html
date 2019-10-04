@@ -1,0 +1,6 @@
+<ion-item *ngFor="let element of arrayOfItems" (click)="showPageOf(element)">
+    <ion-thumbnail slot="end">
+        <img [src]="element.photo">
+    </ion-thumbnail>
+    <ion-label>{{element.name}}</ion-label>
+</ion-item>
