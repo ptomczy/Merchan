@@ -5,9 +5,17 @@ import { SupplierListPage } from './pages/supplier-list/supplier-list';
 import { StoreModule } from '@ngrx/store';
 import * as fromSuppliersReducer from './reducers/supplier.reducer';
 import { SuppliersService } from './services/suppliers.service';
+import { SupplierPage } from './pages/supplier/supplier';
+import { DataResolverService } from '../resolver/data-resolver.service';
 
 const routes: Routes = [
-    {path: '', component: SupplierListPage, pathMatch: 'full'}
+    {path: '', component: SupplierListPage, pathMatch: 'full'},
+    {path: ':suppId', 
+        resolve: {
+            bubasResolver: DataResolverService
+        },
+        component: SupplierPage, 
+        pathMatch: 'full'}
 ]
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { DataResolverService } from './resolver/data-resolver.service';
 
 const routes: Routes = [
   {
@@ -12,13 +13,16 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  },
-  {
-    path: 'ladies',
+    path: 'suppliers',
     loadChildren: () => import('./suppliers/suppliers.module').then(m => m.SuppliersModule)
-  }
+  },
+  // {
+  //   path: 'supplier/:suppId',
+  //   // resolve: {
+  //   //   bubasResolver: DataResolverService
+  //   // },
+  //   loadChildren: () => import ('./suppliers/suppliers.module').then(m => m.SuppliersModule)
+  // }
 ];
 
 @NgModule({

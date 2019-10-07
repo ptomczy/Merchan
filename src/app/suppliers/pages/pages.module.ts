@@ -1,13 +1,13 @@
 import { NgModule } from "@angular/core";
-import { SupplierPage } from './supplier/supplier';
 import { SupplierListPage } from './supplier-list/supplier-list';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SLComponentsModule } from '../components/components.module';
+import { SupplierPage } from './supplier/supplier';
 
 @NgModule({
-    declarations: [SupplierPage, SupplierListPage],
+    declarations: [SupplierListPage, SupplierPage],
     imports: [
         CommonModule,
         FormsModule,

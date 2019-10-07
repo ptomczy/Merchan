@@ -4,11 +4,51 @@
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       <ion-title>
-        Supplier
+        {{supplierData.name}}
       </ion-title>
     </ion-toolbar>
   </ion-header>
   
   <ion-content>
-    <p>Supplier page</p>
+    <div>
+       <ion-img [src]="supplierData.photo"></ion-img>
+    </div>
+    <hr>
+    <h6>Supplier parameters</h6>
+    <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            <p>Age</p>
+          </ion-col>
+          <ion-col>
+            <p>{{supplierData.age}}</p>
+          </ion-col>
+        </ion-row>
+          <ion-row>
+          <ion-col size="8">
+            <p>Height</p>
+          </ion-col>
+          <ion-col>
+            <p>{{supplierData.height}}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="8">
+            <p>Tits</p>
+          </ion-col>
+          <ion-col>
+            <p>{{supplierData.tits}}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="8">
+            <p>Skills</p>
+          </ion-col>
+          <ion-col>
+            <ion-row *ngFor="let skl of supplierData.skills">
+              <p>{{skl}}</p>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
   </ion-content>
