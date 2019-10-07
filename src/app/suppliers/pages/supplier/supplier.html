@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
+        <ion-back-button></ion-back-button>
       </ion-buttons>
       <ion-title>
         {{supplierData.name}}
@@ -13,6 +13,11 @@
     <div>
        <ion-img [src]="supplierData.photo"></ion-img>
     </div>
+    <ion-fab vertical="center" horizontal="end" slot="fixed">
+      <ion-fab-button  color="danger">
+        Eat me!
+      </ion-fab-button>
+    </ion-fab>
     <hr>
     <h6>Supplier parameters</h6>
     <ion-grid>
@@ -45,9 +50,9 @@
             <p>Skills</p>
           </ion-col>
           <ion-col>
-            <ion-row *ngFor="let skl of supplierData.skills">
-              <p>{{skl}}</p>
-            </ion-row>
+            <ion-row *ngFor="let skl of supplierData.skills"> 
+              <p>{{skl | translateSkill}}</p> 
+            </ion-row> 
           </ion-col>
         </ion-row>
     </ion-grid>

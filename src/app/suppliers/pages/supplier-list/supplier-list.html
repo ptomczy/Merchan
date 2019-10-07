@@ -10,7 +10,7 @@
   </ion-header>
   
   <ion-content>
-    <p>Supplier list page</p>
+    <ion-searchbar showCancelButton="never" debounce="750" (ionChange)="goSearch()" [(ngModel)]="searchValue"></ion-searchbar> 
     <button (click)="buttonClicked()">Przycisk</button>
     <ion-list>
       <sl-component [arrayOfItems]="listOfSuppliers"></sl-component>

@@ -13,6 +13,7 @@ export class SupplierListPage implements OnInit {
 
     private info: any;
     private listOfSuppliers: Array<IPerson>;
+    private searchValue: any = null;
 
     constructor(private store: Store<Array<IMeeting>>, private supplyServ: SuppliersService){
 
@@ -62,6 +63,9 @@ export class SupplierListPage implements OnInit {
 
         let sth = this.supplyServ.getSuppliers();
         console.log(sth);
-
     }
+
+    goSearch(){ 
+        console.log('Szukam! Podano: ', this.searchValue); 
+        } 
 }
