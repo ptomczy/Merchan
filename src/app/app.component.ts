@@ -19,7 +19,17 @@ export class AppComponent {
     {
       title: 'Suppliers',
       url: '/suppliers',
-      icon: 'female'
+      icon: 'transgender'
+    },
+    {
+      title: 'Rooms',
+      url: '/rooms',
+      icon: 'home'
+    },
+    {
+      title: 'Scheduler',
+      url: '/scheduler',
+      icon: 'calendar'
     }
   ];
 

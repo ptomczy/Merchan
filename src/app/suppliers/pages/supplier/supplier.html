@@ -13,7 +13,7 @@
     <div>
        <ion-img [src]="supplierData.photo"></ion-img>
     </div>
-    <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab vertical="center" horizontal="end" slot="fixed" (click)="presentModal()">
       <ion-fab-button  color="danger">
         Eat me!
       </ion-fab-button>
