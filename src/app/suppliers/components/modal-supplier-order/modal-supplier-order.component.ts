@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from "@angular/core";
 import { ModalController } from '@ionic/angular';
 import { PickerController } from '@ionic/angular';
 import { PickerOptions, PickerButton } from '@ionic/core';
+import * as moment from 'moment';
 
 
 @Component({
@@ -30,7 +31,9 @@ export class ModalSupplierOrder implements OnInit{
     };
     private baseTimeBrick: number;
     private eventLen: number;
-    private pickerCols: Array<{}>
+    private pickerCols: Array<{}>;
+    private currDate = moment().format("MMMM DD");
+    private monthsToChoose: Array<string> = [];
 
     constructor(private modalCtrl: ModalController, private pickerCtrl: PickerController){
         
@@ -47,6 +50,8 @@ export class ModalSupplierOrder implements OnInit{
             allNight: false,
             room: ''
         }
+
+        //--------tablica dat 30 dni do przodu
 
     }
 
