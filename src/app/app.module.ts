@@ -13,6 +13,7 @@ import { reducers, metaReducers } from './reducers';
 import { SuppliersModule } from './suppliers/suppliers.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { reducer } from './suppliers/reducers/supplier.reducer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { environment } from '../environments/environment';
     //   maxAge: 10,
     //   logOnly: false
     // }),
+    StoreModule.forRoot( reducer ),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
   ],
   providers: [

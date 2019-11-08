@@ -30,6 +30,11 @@ export class AppComponent {
       title: 'Scheduler',
       url: '/scheduler',
       icon: 'calendar'
+    },
+    {
+      title: 'Other',
+      url: '/other',
+      icon: 'help'
     }
   ];
 
