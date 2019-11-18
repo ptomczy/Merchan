@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Last
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-button (click)="btnUp()">Count up</ion-button>
+      <br>
+      <p>Count value: {{counter}}</p>
+      <br>
+      <ion-button (click)="btnRead()">Odczyt</ion-button>
+  </ion-content>

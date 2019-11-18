@@ -35,6 +35,11 @@ export class AppComponent {
       title: 'Other',
       url: '/other',
       icon: 'help'
+    },
+    {
+      title: "Last",
+      url: '/last',
+      icon: 'home'
     }
   ];
 
