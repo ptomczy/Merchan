@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 import { Store, select } from '@ngrx/store';
 import * as lastActions from '../actions/last.actions';
-import { getValues } from '../reducers/last.selectors';
-import { ILastState } from '../models/last.model';
+import { IState } from '../models/last.model';
+import { getValueSelector } from '../reducers/last.selectors';
 
 @Component({
     selector: 'last-page',
@@ -11,7 +11,7 @@ import { ILastState } from '../models/last.model';
 export class LastPage {
     private counter: number = 0;
 
-    constructor(private str: Store<ILastState>){}
+    constructor(private str: Store<IState>){}
 
     private btnUp(){
         this.counter++;
@@ -19,6 +19,6 @@ export class LastPage {
     }
 
     private btnRead(){
-       this.str.pipe(select(getValues)).subscribe(x => console.log(x));
+       this.str.pipe(select(getValueSelector)).subscribe(res => console.log(res));
     }
 }

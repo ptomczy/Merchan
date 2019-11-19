@@ -1,6 +1,7 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { ILastState, IState } from '../models/last.model';
+import { IState } from '../models/last.model';
+import { getValue } from './last.reducer';
 
-export const getFeatureState = createFeatureSelector<ILastState>('lastRedcr');
+export const getFeatureState = createFeatureSelector<IState>('lastRedcr');
 
-export const getValues = createSelector(getFeatureState, (state: ILastState)=> state.myLastState.value);
+export const getValueSelector = createSelector(getFeatureState, getValue);
