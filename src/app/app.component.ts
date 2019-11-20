@@ -40,6 +40,11 @@ export class AppComponent {
       title: "Last",
       url: '/last',
       icon: 'home'
+    },
+    {
+      title: "Last Enader",
+      url: '/lastenader',
+      icon: 'help'
     }
   ];
 

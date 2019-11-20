@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'last',
     loadChildren: () => import('./last/last.module').then(m => m.LastModule)
+  },
+  {
+    path: 'lastenader',
+    loadChildren: () => import('./last-enader/le.module').then(m=> m.LeModule)
   }
 ];
 
