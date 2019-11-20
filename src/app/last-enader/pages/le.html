@@ -11,7 +11,9 @@
   
   <ion-content>
       <div>
-          <ion-button></ion-button>
+        <ion-input placeholder="nazwa" type="text" [(ngModel)]="inputValue"></ion-input>
+        <ion-button (click)="btnClick()">Uruchomienie</ion-button>
+
       </div>
 
   </ion-content>

@@ -5,7 +5,11 @@ import { Component } from "@angular/core";
     templateUrl: 'le.html'
 })
 export class LePage{
+    private inputValue: string;
 
+    btnClick(){
+        console.log('Wartość inputa to: ', this.inputValue);
+    }
     
 
 }
