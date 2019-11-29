@@ -45,6 +45,11 @@ export class AppComponent {
       title: "Last Enader",
       url: '/lastenader',
       icon: 'help'
+    },
+    {
+      title: "HTML5 / CSS3",
+      url: '/hc',
+      icon: 'home'
     }
   ];
 
