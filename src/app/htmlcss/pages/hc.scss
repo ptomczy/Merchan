@@ -1,0 +1,49 @@
+p {
+    text-align: left;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+body {
+    font-size: 16px;
+    font-family: 'Sulphur Point', sans-serif;
+}
+ol {
+    list-style-type: upper-alpha;
+}
+ul {
+    list-style-image: url("../../../assets/gwiazda-mala.png");
+}
+.blue-paragraph {
+    color: blue;
+}
+
+#selected-element {
+    color: red;
+}
+.special {
+    font-size: 110%;
+    font-family: sans-serif;
+}
+.heading h4{
+    font-style: italic;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: blue;
+}
+
+nav ul {
+    background-color: red;
+    color: white;
+}
+
+nav li:hover {
+    background-color: blue;
+}

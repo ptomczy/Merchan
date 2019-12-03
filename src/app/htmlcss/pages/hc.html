@@ -9,6 +9,81 @@
     </ion-toolbar>
   </ion-header>
   
-  <ion-content>
+  <ion-content
+    [scrollEvents]="true"
+    class="ion-padding"
+  >
+    <figure>
+      <!-- <img src="../../../assets/Jason.jpg" width="250px" height="250px" alt="zdjęcie dżejsona"/>
+      <figcaption>To jest podpis pod zdjęciem</figcaption> -->
+    </figure>
+    <h3 style="text-align: left; color: rgb(256,0,0)" class="heading">Informacje</h3>
+      <!-- <a href="#sekcjaA">Od razu do sekcji A</a> nie działa na IONIC / ANGULAR -->
+      <!-- <a href="pageX#sekcjaA">Od razu do sekcji A</a> nie działa na IONIC / ANGULAR -->
+      <ion-button click="scrollToPoint(0, 300)">Od razu do Punktu 0, 300</ion-button>
+      <ion-button click="scrollToBottom()">Daj do końca</ion-button>
+    <aside>
+      <blockquote>Informacje są bardzo ważne</blockquote>
+      autor nieznany
+    </aside>
+    
+    <section>
+      <p style="text-align: jutsify; font-size: 0.9rem; color:#ff0000">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span class="special">sed do eiusmod</span> tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="http://www.wp.pl" target="_blank">Go to Wirtualna Polska</a>
+      <br/>
+      <a href="mailto:anybody@somewhere.com?Subject=Skontaktuj się ze mną">Kontakt</a>
+
+      <h4 class="heading">Inny nagłówek kontrolny</h4>
+
+      <p style="text-align: justify; font-size: 1.0rem" class="blue-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <ul>
+        <li>Pierwszy element</li>
+        <li class="blue-paragraph">Drugi element</li>
+        <li>Trzeci element</li>
+      </ul>
+      <ol>
+        <li>Pierwszy element</li>
+        <li id="selected-element">Drugi element</li>
+        <ul>
+          <li>Pierwszy element</li>
+          <li>Drugi element</li>
+        </ul>
+        <li>Trzeci element</li>
+      </ol>
+    </section>
+    <section>
+      <p style="text-align: justify; font-size: 1.0rem; color: yellow">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section>
+      <p style="text-align: justify; font-size: 1.0rem" id="sekcjaA">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <nav>
+      <ul #listaOstatnia>
+        <li>Pierwszy element</li>
+        <li>Drugi element</li>
+        <li>Trzeci element</li>
+      </ul>
+    </nav>
+
 
   </ion-content>
