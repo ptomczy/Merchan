@@ -20,8 +20,8 @@
     <h3 style="text-align: left; color: rgb(256,0,0)" class="heading">Informacje</h3>
       <!-- <a href="#sekcjaA">Od razu do sekcji A</a> nie działa na IONIC / ANGULAR -->
       <!-- <a href="pageX#sekcjaA">Od razu do sekcji A</a> nie działa na IONIC / ANGULAR -->
-      <ion-button click="scrollToPoint(0, 300)">Od razu do Punktu 0, 300</ion-button>
-      <ion-button click="scrollToBottom()">Daj do końca</ion-button>
+      <ion-button (click)="scrollToPoint(0, 300)">Od razu do Punktu 0, 300</ion-button>
+      <ion-button (click)="scrollToBottom()">Daj do końca</ion-button>
     <aside>
       <blockquote>Informacje są bardzo ważne</blockquote>
       autor nieznany

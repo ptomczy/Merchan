@@ -14,7 +14,7 @@ export class HcPage {
         this.content.scrollToPoint(x, y, 1500);
     }
 
-    scrollToEnd(){
+    scrollToBottom(){
         this.content.scrollToBottom(1500);
     }
 }
