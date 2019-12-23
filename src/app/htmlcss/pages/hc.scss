@@ -1,5 +1,9 @@
 p {
     text-align: left;
+    width: 400px;
+    overflow: hidden;
+    margin: 20px;
+    padding-top: 20;
 }
 h1, h2, h3 {
     text-align: center;
@@ -7,6 +11,13 @@ h1, h2, h3 {
 body {
     font-size: 16px;
     font-family: 'Sulphur Point', sans-serif;
+    margin: 0;
+    padding: 0;
+    clear: right;
+}
+img {
+    float: right;
+
 }
 ol {
     list-style-type: upper-alpha;
@@ -46,4 +57,52 @@ nav ul {
 
 nav li:hover {
     background-color: blue;
+}
+
+section {
+    position: relative;
+    top: 50px;
+    left: 80px;
+}
+
+#listaOstatnia {
+    position: absolute;
+    left: 20px;
+    
+}
+
+.aside-paragraph {
+    width: 300px;
+    float: right;
+    background-color: yellowgreen;
+    padding: 5px;
+    margin: auto;
+}
+
+table td, th, caption{
+    border: 1px solid green;
+    border-spacing: 10px;
+}
+
+thead {
+    background-color: red;
+}
+
+table {
+    width: 500px;
+    height: 300px;
+
+}
+
+th {
+    height: 80px;
+}
+
+.small-column {
+    width: 50px;
+}
+td {
+    text-align: right;
+    vertical-align: bottom;
+    padding: 30px;
 }
