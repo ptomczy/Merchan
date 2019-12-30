@@ -106,3 +106,29 @@ td {
     vertical-align: bottom;
     padding: 30px;
 }
+label {
+    display: block;
+    width: 200px;
+    float: left;
+    text-align: right;
+    margin: 10px 5px;
+    clear: left;
+}
+input, select, textarea {
+    margin: 10px 5px;
+    vertical-align: middle;
+}
+
+.checks {
+    vertical-align: bottom;
+}
+
+video {
+    margin: 10px 5px;
+    border: 2px solid red;
+    //poniżej dla innych przeglądarek
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale;
+    //-----------
+    filter: grayscale(100%);
+}

@@ -153,22 +153,47 @@
     <form>
       <fieldset>
         <legend>Informacja</legend>
-        First name:
-        <input type="text" name="first-name" placeholder="dawaj nazwisko" autofocus required/>
-        Email:
-        <input type="email" name="email" placeholder="dawaj email"/>
-        Password:
-        <input type="password" name="password"/>
-        Checkbox:
-        <input type="checkbox" name="check" value="v1"/>
-        <input type="checkbox" name="check" value="v2"/>
-        Radio:
-        <input type="radio" name="radio" value="r1"/>
-        <input type="radio" name="radio" value="r2"/>
+        <label for="first-name">First name:</label>
+        <input type="text" name="first-name" placeholder="dawaj nazwisko" autofocus required id="first-name" size="40"/>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="dawaj email" id="email"/>
+        <label for="first-name">Password:</label>
+        <input type="password" name="password" id="password"/>
+        <label for="checkbox">Checkbox:</label>
+        <input class="checks" type="checkbox" name="check" value="v1" id="checkbox"/>
+        <input class="checks" type="checkbox" name="check" value="v2" id="checkbox"/>
+        <label for="addTxt">Dodatkowy tekst</label>
+        <textarea name="dodatkowyTekst" cols="40" rows="6"></textarea>
+        <label for="radio">Radio:</label>
+        <input type="radio" name="radio" value="r1" id="radio"/>
+        <input type="radio" name="radio" value="r2" id="radio"/>
         <br/>
+        <label for="range">Value:</label>
+        <input type="range" name="range" min="1" max="5" id="range"/>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date"/>
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color"/>
 
       </fieldset>
+      <aside>
+        <figure>
+          <img src="../../../assets/Tina.jpg" alt="zdjęcie tiny"/>
+        </figure>
+      </aside>
     </form>
+    <br/>
+    <h6>Tu będzie strimer wideo</h6>
+    <video src="../../../assets/grill.mp4" width="320" height="180" autoplay loop poster="../../../assets/gwiazda-mala.png">Masz hujową przeglądarkę, dlatego nie widzisz filmu</video>
+    <!-- albo dla wykorzystania innych formatów: zamiast wideo można mnieć audio (bez wysokości i szerokości. Może być loop)
+      <video width="640" height="320">
+        <source src="nazwapliku.mp4 type="video/mp4">
+        <source src="nazwapliku.mov type="video/mov">
+        <source src="nazwapliku.webm type="video/webm">
+        <source src="nazwapliku.xxx type="video/xxx">
+      </video>
+    -->
+
 
 
   </ion-content>
